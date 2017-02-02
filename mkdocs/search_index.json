@@ -1,0 +1,154 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "IntegralSTOR UNICell documentation\n\n\nIntegralSTOR UNICell is an open source storage system built upon Linux, open ZFS and many more open source components.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#integralstor-unicell-documentation", 
+            "text": "IntegralSTOR UNICell is an open source storage system built upon Linux, open ZFS and many more open source components.", 
+            "title": "IntegralSTOR UNICell documentation"
+        }, 
+        {
+            "location": "/initial/network_access/", 
+            "text": "Before you can access IntegralView, the web based management console in order to perform all administration functions, the system needs to be put through a few initial steps. \n\n\nPlease connect a monitor and a USB keyboard before you power on the system. Once the UNICell system is powered on, the system will boot up and you will see some messages on the monitor as the operating system and the storage software loads.\n\n\nAt the end of the booting sequence, you will see a menu of options on the monitor(Screen) similar to the screen shot below. Operations performed on this console menu will override any operations that may have been done from IntegralView so please use this menu with caution.\n\n\nConnect at least one ethernet port to your network before proceeding. Choose the \u201cConfigure networking\u201d option from the console menu.\n\n\nThis will take you through a few prompts for basic network configuration. Select the network settings for the ethernet port to which you have connected the cable. Please note that since it is advisable to use a static IP address for a storage device so that it can be accessible even across reboots.\n\n\nOnce you have configured your IP settings, you will then need to choose the \u201cScan system configuration\u201d menu option in order for the system to scan and generate the initial hardware configuration.\n\n\nOnce these two options have been completed, you are now ready to use IntegralView to perform all further operations.\n\n\nIt is now advisable to disconnect the keyboard and monitor to prevent unintended access to the console menu.", 
+            "title": "Network access configuration"
+        }, 
+        {
+            "location": "/initial/accessing/", 
+            "text": "Once the steps in the previous section have been completed, you can then point your web browser to the configured IP addres(For example, if you had configured an IP address of 192.168.1.249, please type http://192.168.1.249 in a web browser of your choice like firefox or chromium).\n\n\nIf the networking configuration was done correctly and your computer and the UNICell storage system are on the same network then you should then see a screen similar to the one below.\n\n\n\n\nIf you do not see this screen then please check the network connectivity from your computer to the UNICell's configure IP address using a tool such as ping/telnet.\n\n\nYou will be prompted for a login name and password.\n\n\nThere are two levels of administrator logins with different privileges. For most common tasks, the admin username called \"admin\" should be used. The default password for this user is set to \u201cadmin\u201d.\n\n\nThere is another administrator login name called \"superadmin\" which gives provides all the functionality of the \"admin\" user plus the ability to remotely reboot the IntegralStor system.\n\n\n\n\nIt is advised that you change this password as soon as you login to IntegralView for security purposes.", 
+            "title": "Accessing IntegralView"
+        }, 
+        {
+            "location": "/initial/getting_familiar/", 
+            "text": "IntegralView has been designed to be very intuitive to use but a basic introduction to its layout may help in speeding up this understanding. There are four main areas in IntegralView as depicted in the screen below :\n\n\n\n\nThe help/alerts/logout section are visible and accessible from any screen in IntegralView. The \u201chelp\u201d link provides context sensitive help that is relevant to the particular screen in use with a brief explanation of its purpose and how to use it. The \u201calerts\u201d icon is normally \"!\" in colour and this icon changes coulour and flashes to inform you about any new system alerts. You can have a quick view of the new alerts by clicking on the icon. You can logout of IntegralView by clicking on the logout link on the top right hand corner of the screen.\n\n\nThe main category of actions available to you are grouped into the vertically alligned menu options on the left hand side of the screen.\n\n\nClicking on one of these main menu options brings up a set of horizintally alligned sub menu tabs. The options in these tabs correspond to the selected main menu option.\n\n\nClicking on a sub menu tab brings up the corresponding configuration screen on the main configuration area. This is where your actual configuration actions will be performed.", 
+            "title": "Getting familiar with IntegralView"
+        }, 
+        {
+            "location": "/system_configuration/intro/", 
+            "text": "To view the basic system information:\n\n\n\n\n\n\nSelect the \u201c\nSystem\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nSystem information\n\u201d sub menu tab", 
+            "title": "Viewing system information"
+        }, 
+        {
+            "location": "/system_configuration/scanning/", 
+            "text": "If there is a change in hardware configuration (for example, addition of memory, hard disks, etc), this option can be used to scan the system for the current hardware configuration.\n\n\n\n\n\n\n\n\nSelect the \u201c\nSystem\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nSystem information\n\u201d sub menu tab.\n\n\n\n\n\n\nSelect the \u201c\nScan for hardware changes\n\u201d option in the Actions dropdown.\n\n\n\n\n\n\nThis will then scan the system and display the discovered configuration. If you find the new configuration acceptable then you can then save this as the new master configuration.", 
+            "title": "Scanning for hardware changes"
+        }, 
+        {
+            "location": "/system_configuration/download/", 
+            "text": "If there is an issue that the support personel need to examine, use this option to download the complete information about the system.\n\n\n\n\n\n\n\n\nSelect the \u201c\nSystem\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nSystem information\n\u201d sub menu tab\n\n\n\n\n\n\nClick on the \u201c\nDownload system configuration\n\u201d button\n\n\n\n\n\n\nThis results in all the system configuration files and log files being downloaded in one compressed file.", 
+            "title": "Download system configuration"
+        }, 
+        {
+            "location": "/system_configuration/email/", 
+            "text": "The UNICell system can be configured to send emails for all alerts to a designated set of recipients. Use this option to configure this feature. This features requires access to an SMTP server.\n\n\n\n\n\n\n\n\nSelect the \u201c\nSystem\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nEmail alerts\n\u201d sub menu tab\n\n\n\n\n\n\nIf configured, then the current configuration is displayed and can be modified by clicking on the \u201c\nModify\n\" button at the bottom of the screen. If not, you can click on the \u201cConfigure email settings\u201d button to configure email alerts. In either case, you will be prompted for the following information :\n\n\n\n\n\n\nSMTP server\n : The IP address of the SMTP server.\n\n\nSMTP server port\n : The port on which the SMTP server is listening for connections\n\n\nSMTP server account username\n : The account name to use on the email server in order to send emails\n\n\nSMTP server account password\n : The password of the account name specified above\n\n\nUse TLS\n : TLS is a standards-based protocol based on Secure Sockets Layer. If your email server requires the use of TLS, please check this option.\n\n\nSend email for alerts\n : Check this option if you want to send an email for every alert.\n\n\nEmail recipient list\n : A comma separated list of email addresses to which the email alert should be sent.\n\n\nUpon saving, a system will attempt to send a test email based on the saved configuration.", 
+            "title": "Configuring email alerts"
+        }, 
+        {
+            "location": "/zfs/intro/", 
+            "text": "The IntegralStor UNICell system is based upon the ZFS filesystem. ZFS provides many features that combine to provide an extremely scalable and rock solid file system. Some of these features include extreme data integrity(protection against silent disk errors, etc using parity based checksumming), software RAID, read and write caching, copy-on-write, light weight snapshots, deduplication, compression and extreme scalability (it is a 128-bit file system that is capable of managing zettabytes (one billion terabytes) of data!).\n\n\nBefore you can start using your UNICell system, it is useful to be familiar with some of the terminology that is used in ZFS.\n\n\nPool\n - The basic building block that is required in order to use a UNICell system is a ZFS Pool. A pool is a logical group of devices describing the layout(RAID, mirror, stripe, etc) and physical characteristics of the available storage. Depending upon the number of underlying storage devices and the layouts, you could have more than one pool on a UNICell system. Pools have many familiar ZFS features, including copy-on-write, snapshots, clones, and checksumming. A pool is a prerequisite in order to create a ZFS filessystem or a block device volume.\nA pool can be in one of the following states : online (all well), degraded(when one or more underlying disks have failed but the pool is still accessible) or faulted(no longer usable as more than the minimum number of redundancy has been exceeded due to faulty disks).\n\n\nDataset\n - A dataset is a ZFS filesystem that is created on top of a pool. All end user file based data in the UNICell system has to reside in a ZFS dataset. You can turn on features such as compression or deduplication on a dataset.\n\n\nVolume\n - A volume is a block device that can be created within a pool. In order to create an ISCSI target, a volumes is a prerequisite. You can turn on features such as compression or deduplication on a volume as well.\n\n\nSnapshot\n - A read-only copy of a dataset(file system) or volume at a given point in time.\nSnapshots in ZFS are instantanous and light weight. The copy on write feature of ZFS means that the snapshot contains the original version of the filesystem or volume and the current(live) version of the volume or file system consists only of the changes since the last snapshot.\nSnapshots can be used to provide a readonly version of a filesystem or volume at a point in time or they can also be used to rollback to a certain point in time.\n\n\nWrite cache\n \u2013 A ZFS pool can be configured with a write cache. In the UNICell system can configure the main memory(RAM) to serve as an extremely fast write cache.\n\n\nScrub\n \u2013 Scrubbing a pool involves calculating the checksum of all the data blocks in the pool and comparing them against the correct checksum stored in the metadata. This is useful to check silent corruption of data. It is suggested that the pools are scrubbed every couple of months. Data access speeds are degraded when a scrub is being done so please schedule it at a time when the usage is low.", 
+            "title": "ZFS concepts and terminology"
+        }, 
+        {
+            "location": "/zfs/storage_layouts/", 
+            "text": "The UNICell system currently supports the following layout types :\n\n\n\n\n\n\nStripe\n \u2013 Used where only data access speed is required. Cannot tolerate any disk failures.\n\n\n\n\n\n\nMirror\n \u2013 A 2 way default mirroring.\n\n\n\n\n\n\nRAID5\n \u2013 Minimum of 3 unused disks required. Can tolerate a 1 disk failure.\n\n\n\n\n\n\nRAID6\n - \u2013 Minimum of 4 unused disks required. Can tolerate a simultaneous 2 disk failure.\n\n\n\n\n\n\nRAID10\n \u2013 Minimum of 4 unused disks required. Used for speed and some level of data loss. Can tolerate a one disk failure in each mirror.", 
+            "title": "Supported storage layouts"
+        }, 
+        {
+            "location": "/zfs/view_zfs_pools/", 
+            "text": "Select the \u201c\nDisks and storage pools\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nZFS pools\n\u201d sub menu tab.\n\n\n\n\n\n\nThe main area will then display the list of all available pools along with the datasets/block device volumes in each of the pools.", 
+            "title": "Viewing ZFS pools"
+        }, 
+        {
+            "location": "/logging/intro/", 
+            "text": "The UNICell storage system generates the following logs that are visible to the administrator :\n\n\nAudit trail\n : For any modification to the UNICell system from IntegralView, an audit trail entry is created documented the time, the action and the source IP from where this change was done. This is useful in tracking the usage and modification history of the system.\n\n\nAlerts\n : The UNICell system monitors the health of all components every minute and if it finds any problems in any of its major components, it generate an alert. You can also configure the system to send an email every time an alert is generated. Please see the \u201cSystem configuration\u201d section for details on how to do this.\n\n\nSystem logs\n : These comprise the underlying operating system logs along with the CIFS services logs. These logs can be downloaded in a compressed format onto your computer.\n\n\nHardware logs\n : If UNICell is running on supported hardware, then the hardware specific logs are also available to view or download.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/logging/view_logs/", 
+            "text": "To view logs in your browser :\n\n\n\n\n\n\n\n\nSelect the \u201c\nLogs\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nView logs\n\u201d sub menu tab.\n\n\n\n\n\n\nSelect the type of log that you want to view from the drop down selector and click the \"View\" button.\n\n\n\n\n\n\nThe selected log will then be displayed.", 
+            "title": "Viewing logs"
+        }, 
+        {
+            "location": "/logging/rotate_logs/", 
+            "text": "To rotate either the audit log or alerts log :\n\n\n\n\n\n\n\n\nSelect the \u201c\nLogs\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nView logs\n\u201d sub menu tab.\n\n\n\n\n\n\nSelect the type of log that you want to rotate from the drop down selector.\n\n\n\n\n\n\nClick on the Actions button and select the rotate action.\n\n\n\n\n\n\nThe selected log will then be rotated. The rotated logs can be viewed by clicking on either the \u201c\nRotated audit logs\n\u201d or \"Rotated alerts\" sub menu tab.", 
+            "title": "Rotating audit and alert logs"
+        }, 
+        {
+            "location": "/logging/view_rotated_logs/", 
+            "text": "To view rotated logs in your browser :\n\n\n\n\n\n\n\n\nSelect the \u201c\nLogs\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect either the \u201c\nRotated audit logs\n\u201d or the \"\nRotated alerts\n\u201d sub menu tab.\n\n\n\n\n\n\nA list of previously rotated logs will be displayed. \n\n\n\n\n\n\nClick on the \"View file\" button corresponding to the desired log to view that rotated log.\n\n\n\n\n\n\nThe selected rotated log will then be displayed.", 
+            "title": "Viewing rotated logs"
+        }, 
+        {
+            "location": "/logging/download_logs/", 
+            "text": "To download logs onto your computer:\n\n\n\n\n\n\n\n\nSelect the \u201c\nLogs\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nDownload logs\n\u201d sub menu tab.\n\n\n\n\n\n\nSelect the type of log that you want to download from the drop down selector and click the \"Download\" button.\n\n\n\n\n\n\nThe selected log will then be downloaded onto your computer.", 
+            "title": "Downloading logs"
+        }, 
+        {
+            "location": "/networking/intro/", 
+            "text": "The UNICell system provides you with various network parameters that can be configured to provide optimal performance.  The following section will take you through these processes.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/networking/view_interfaces/", 
+            "text": "In order to view all the network interfaces and network bonds :\n\n\n\n\n\n\n\n\nSelect the \u201c\nNetworking\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nNetwork interfaces\n\u201d sub menu tab.\n\n\n\n\n\n\nThe list of interfaces present along with a list of configured network interface bonds will be listed", 
+            "title": "Viewing interfaces & bonds"
+        }, 
+        {
+            "location": "/networking/view_interface/", 
+            "text": "In order to view the details of an individual network interface or network bond :\n\n\n\n\n\n\n\n\nSelect the \u201c\nNetworking\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nNetwork interfaces\n\u201d sub menu tab.\n\n\n\n\n\n\nThe list of interfaces present along with a list of configured network interface bonds will be listed\n\n\n\n\n\n\nClick the \"Action\" drop down for the desired interface and bond and select the \"View details and configure\"\n\n\n\n\n\n\nThis will take you to the screen that provides you details of this interface/bond and allows you to configure it.\n\n\n\n\nAbove: Network interface details\n\n\n\n\nAbove: Network bond details", 
+            "title": "Viewing and configuring individual interfaces & bonds"
+        }, 
+        {
+            "location": "/networking/configure_address/", 
+            "text": "In order to configure the address for a network interface or bond :\n\n\n\n\n\n\n\n\nGo to the screen that displays the details of the desired interface or bond (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nActions\n\" drop down selector and select the \u201c\nModify interface address\n\u201d or \"\nModify bond address\n\" selection. You will then be prompted for the following information in order to change the address :\n\n\n\n\n\n\n\n\nAddress type\n : A choice of DHCP or status is provided. It is recommended that you either provide a very long lease DHCP address or use a static IP address instead as this will prevent frequent address changes and data access disruptions\n\n\nThe following parameters are only enabled if you choose static.\n\n\nIP address\n : The IPv4 address for this UNICell.\n\n\nNetmask\n : Netmask in a dotted decimal format.\n\n\nDefault gateway\n : The default gateway for data flowing through this interface.\n\n\nMTU size\n : Maximum transfer unit for jumbo frames.", 
+            "title": "Configuring network addresses"
+        }, 
+        {
+            "location": "/networking/change_interface_state/", 
+            "text": "In order to change the state of an interface (bring it up or down):\n\n\n\n\n\n\n\n\nGo the the screen that displays all interfaces (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nActions\n\" drop down selector corresponding to the desired interface and choose either the \"\nBring up this interface\n\" or \"\nBring down this interface\n\" selection.\n\n\n\n\n\n\nIf you are bring down an interface, you will be presented with a confirmation page before the action happens.", 
+            "title": "Changing interface status"
+        }, 
+        {
+            "location": "/networking/create_bond/", 
+            "text": "In order to create a network bond :\n\n\n\n\n\n\n\n\nGo the the screen that displays all interfaces (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nCreate new bond\n\" button.\n\n\n\n\n\n\n\n\nYou will then be taken to the screen shown above and prompted for the following information needed to create a bond :\n\n\nBond name\n : A name for the bond being created.\n\n\nBonding mode\n : The UNICell system supports two modes of bonding \u2013 802.3ad(mode 4) or balance-alb (mode 6). Please note that 802.3ad needs support and configuration on the switch side as well.\n\n\nSlave interfaces\n : Select the interfaces that you want to include as part of this bond. Only those interfaces that are not already a part of another bond will be displayed here.", 
+            "title": "Create a network bond"
+        }, 
+        {
+            "location": "/networking/remove_bond/", 
+            "text": "In order to remove a network bond :\n\n\n\n\n\n\n\n\nGo the the screen that displays all interfaces (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nActions\n\" drop down selector corresponding to the desired bond and choose the \"\nRemove this bond\n\" selection.\n\n\n\n\n\n\nYou will be presented with a confirmation page before the actual bond removal happens.", 
+            "title": "Removing a network bond"
+        }, 
+        {
+            "location": "/networking/configure_hostname/", 
+            "text": "In order to view and configure the hostname and domain name of the UNICell system :\n\n\n\n\n\n\n\n\nSelect the \u201c\nNetworking\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nHostname\n\u201d sub menu tab.\n\n\n\n\n\n\nThis displays the current hostname and domain name.\n\n\n\n\n\n\nClick on the \u201c\nModify hostname and domain name\n\u201d button to change the hostname and domain name of the UNICell system.\n\n\n\n\n\n\n\n\nYou will be prompted for the following information :\n\n\nHostname (without domain name component)\n : Enter only the hostname component here\n\n\nDoamin name\n : Enter only the domain name component here.", 
+            "title": "Configuring the hostname and domain name"
+        }, 
+        {
+            "location": "/networking/configure_dns/", 
+            "text": "The UNICell system needs to have the correct DNS name servers configured in order for services such as CIFS AD authentication, email alerting, NTP to work correctly. Use this to configure the correct list of DNS name servers.\n\n\nIn order to view and configure the DNS name servers :\n\n\n\n\n\n\n\n\nSelect the \u201c\nNetworking\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nDNS\n\u201d sub menu tab.\n\n\n\n\n\n\nThe list of currently configured DNS name servers is displayed.\n\n\n\n\n\n\nClick on the \u201c\nModify DNS name servers\n\u201d to change the list of configured DNS servers. You will be prompted for either one or more (comma separated) IP address(es) of the DNS name servers.", 
+            "title": "Configuring DNS name servers"
+        }, 
+        {
+            "location": "/networking/view_vlans/", 
+            "text": "In order to view the VLANS for an interface:\n\n\n\n\n\n\n\n\nGo the the screen that displays all interfaces (\ninstructions\n)\n\n\n\n\n\n\nThe column called VLAN IDs corresponding to the desired interface gives the list of created VLANs.\n\n\n\n\n\n\nYou can also see this information by viewing the details of the specific interface. (\ninstructions\n)", 
+            "title": "Viewing VLANs for an interface"
+        }, 
+        {
+            "location": "/networking/create_vlan/", 
+            "text": "In order to create a VLAN :\n\n\n\n\n\n\n\n\nGo the the screen that displays the desired interface details (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nActions\n\" dropdown and select the \"\nCreate VLAN\n\" option.\n\n\n\n\n\n\nYou will be taken to a screen like the one below where you need to enter a VLAN ID and create the VLAN.", 
+            "title": "Creating a VLAN for an interface"
+        }, 
+        {
+            "location": "/networking/configure_vlan/", 
+            "text": "Go the the screen that displays the desired interface details (\ninstructions\n)\n\n\nClick on the \"\nActions\n\" dropdown next to the desired VLAN.\n\n\nSelect the \"\nModify configuration\n\" option to set the address for this VLAN.", 
+            "title": "Configuring a VLAN address"
+        }, 
+        {
+            "location": "/networking/remove_vlan/", 
+            "text": "Go the the screen that displays the desired interface details (\ninstructions\n)\n\n\nClick on the \"\nActions\n\" dropdown next to the desired VLAN.\n\n\nSelect the \"\nRemove this VLAN\n\" option \n\n\nYou will be prompted for a confirmation before this VLAN is removed.", 
+            "title": "Removing a VLAN"
+        }
+    ]
+}
