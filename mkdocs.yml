@@ -1,0 +1,43 @@
+site_name: IntegralSTOR UNICell
+site_description: Project documentation for the IntegralSTOR UNICell storage system.
+site_url: https://github.com/integralstor/integralstor_unicell
+repo_url: https://github.com/integralstor/unicell_admin_docs
+
+pages:
+  - Home: index.md
+  - Getting started:
+    - Network access configuration: initial/network_access.md
+    - Accessing IntegralView: initial/accessing.md
+    - Getting familiar with IntegralView: initial/getting_familiar.md
+  - System information:
+    - Viewing system information: system_configuration/intro.md
+    - Scanning for hardware changes: system_configuration/scanning.md
+    - Download system configuration: system_configuration/download.md
+    - Configuring email alerts: system_configuration/email.md
+  - ZFS storage operations:
+    - ZFS concepts and terminology: zfs/intro.md
+    - Supported storage layouts: zfs/storage_layouts.md
+    - ZFS Pool operations:
+      - Viewing ZFS pools: zfs/view_zfs_pools.md
+  - Logging and alerting:
+    - Introduction: logging/intro.md
+    - Viewing logs: logging/view_logs.md
+    - Rotating audit and alert logs: logging/rotate_logs.md
+    - Viewing rotated logs: logging/view_rotated_logs.md
+    - Downloading logs: logging/download_logs.md
+  - Network configuration:
+    - Introduction: networking/intro.md
+    - Viewing interfaces & bonds: networking/view_interfaces.md
+    - Viewing and configuring individual interfaces & bonds: networking/view_interface.md
+    - Configuring network addresses: networking/configure_address.md
+    - Changing interface status: networking/change_interface_state.md
+    - Create a network bond: networking/create_bond.md
+    - Removing a network bond: networking/remove_bond.md
+    - Configuring the hostname and domain name: networking/configure_hostname.md
+    - Configuring DNS name servers: networking/configure_dns.md
+    - Viewing VLANs for an interface: networking/view_vlans.md
+    - Creating a VLAN for an interface: networking/create_vlan.md
+    - Configuring a VLAN address: networking/configure_vlan.md
+    - Removing a VLAN : networking/remove_vlan.md
+
+theme: readthedocs
