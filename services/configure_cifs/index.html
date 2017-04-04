@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Configuring Windows access - IntegralSTOR UNICell</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Configuring Windows access";
+    var mkdocs_page_input_path = "services/configure_cifs.md";
+    var mkdocs_page_url = "/services/configure_cifs/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> IntegralSTOR UNICell</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../initial/network_access/">Network access configuration</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>IntegralView</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integral_view/accessing/">Accessing IntegralView</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integral_view/changing_password/">Changing the IntegralView password</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integral_view/getting_familiar/">Getting familiar with IntegralView</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integral_view/switching_modes/">Change IntegralView access mode (secure/non-secure)</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>System information</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../system_configuration/intro/">Viewing system information</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../system_configuration/scanning/">Scanning for hardware changes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../system_configuration/download/">Download system configuration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../system_configuration/email/">Configuring email alerts</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>ZFS storage operations</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../zfs/intro/">ZFS concepts and terminology</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../zfs/storage_layouts/">Supported storage layouts</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>ZFS Pool operations</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../zfs/view_zfs_pools/">Viewing ZFS pools</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Local users and groups</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../users_groups/intro/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../users_groups/viewing_users_groups/">Viewing users or groups</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../users_groups/creating_user_group/">Creating a user or group</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../users_groups/changing_user_password/">Changing a user's password</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../users_groups/remove_user/">Remove a user account</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../users_groups/change_user_groups/">Modifying a user's group membership</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../users_groups/remove_group/">Remove a group account</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../users_groups/change_group_users/">Modifying a group's membership</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Logging and alerting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../logging/intro/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../logging/view_logs/">Viewing logs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../logging/rotate_logs/">Rotating audit and alert logs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../logging/view_rotated_logs/">Viewing rotated logs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../logging/download_logs/">Downloading logs</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Network configuration</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/intro/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/view_interfaces/">Viewing interfaces & bonds</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/view_interface/">Viewing and configuring individual interfaces & bonds</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/configure_address/">Configuring network addresses</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/change_interface_state/">Changing interface status</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/create_bond/">Create a network bond</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/remove_bond/">Removing a network bond</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/configure_hostname/">Configuring the hostname and domain name</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/configure_dns/">Configuring DNS name servers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/view_vlans/">Viewing VLANs for an interface</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/create_vlan/">Creating a VLAN for an interface</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/configure_vlan/">Configuring a VLAN address</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../networking/remove_vlan/">Removing a VLAN</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Background tasks</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../background_tasks/intro/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../background_tasks/view_tasks/">Viewing all background tasks</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../background_tasks/view_task_details/">Viewing background task details</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../background_tasks/remove_task/">Removing a task</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Replication and snapshots</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/intro/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/view_snapshots/">Viewing snapshots</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/create_snapshot/">Creating a snapshot</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/snapshot_operations/">Snapshot operations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/view_snapshot_schedules/">View snapshots schedules</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/modify_snapshot_schedules/">Modify snapshots schedules</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/create_snapshot_schedule/">Create a new snapshots schedule</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/view_remote_replications/">Viewing remote replications</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/schedule_remote_replication/">Scheduling a remote replications</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/modify_remote_replication/">Modifying the schedule for a remote replications</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../replication_snapshots/cancel_remote_replication/">Cancelling the schedule for a remote replications</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Services management</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../intro/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../controlling_services/">Controlling services</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../configure_ntp/">Configuring the NTP service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Configuring Windows access</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#viewing-the-current-configuration">Viewing the current configuration</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#modifying-the-authentication-method">Modifying the authentication method</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#modifying-authentication-settings">Modifying authentication settings</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#configuring-active-directory-ad-authentication-for-windows-shares">Configuring Active Directory (AD) authentication for Windows shares</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#configuring-local-user-authentication-for-windows-shares">Configuring Local User authentication for Windows shares</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../configure_ftp/">Configuring FTP access</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Data backup</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../backup/intro/">Introduction</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Disk management</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../disks/view_disks/">Viewing disks</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">IntegralSTOR UNICell</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Services management &raquo;</li>
+        
+      
+    
+    <li>Configuring Windows access</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/integralstor/unicell_admin_docs/edit/master/docs/services/configure_cifs.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="introduction">Introduction</h2>
+<p>Before you can create and use Windows shares, you should first configure the Windows access service.</p>
+<p>UNICell currently supports two methods of authentication for Windows shares – Active Directory and local user/groups. Before you can create shares, please select one of these methods of authentication.</p>
+<h2 id="viewing-the-current-configuration">Viewing the current configuration</h2>
+<p>To view the current authentication method :</p>
+<p><img alt="Viewing Windows configuration" src="../../img/view_cifs_configuration.png" /></p>
+<ul>
+<li>
+<p>Select the “<strong>Services</strong>” main menu item on the left of the screen.</p>
+</li>
+<li>
+<p>Select the “<strong>Configure Windows access</strong>” sub menu tab.</p>
+</li>
+</ul>
+<p>This screen will display the current authentication method and other details.</p>
+<h2 id="modifying-the-authentication-method">Modifying the authentication method</h2>
+<p>To change the authentication method :</p>
+<p><img alt="Changing authentication method" src="../../img/change_authentication_method.png" /></p>
+<ul>
+<li>
+<p>Click on the "<strong>Actions</strong>" dropdown and select “<strong>Change authentication method</strong>” </p>
+</li>
+<li>
+<p>This will allow you to change the authentication method. Once you select the authentication method, you will be taken to a screen that allows you to select the required parameters for that particular mode of authentication. <strong>Please note that changing the authentication method will result in the current access control being lost for all currently existing shares.</strong></p>
+</li>
+</ul>
+<h2 id="modifying-authentication-settings">Modifying authentication settings</h2>
+<p><img alt="Viewing Windows configuration" src="../../img/view_cifs_configuration.png" /></p>
+<p>To change the authentication settings but retain the current authentication method :</p>
+<ul>
+<li>Click on the "<strong>Actions</strong>" dropdown and select “<strong>Change authentication settings</strong>” </li>
+</ul>
+<p>You will be taken to a screen that allows you to select the required parameters for that particular mode of authentication. </p>
+<h2 id="configuring-active-directory-ad-authentication-for-windows-shares">Configuring Active Directory (AD) authentication for Windows shares</h2>
+<p><img alt="Configuring Active Directory authentication" src="../../img/modify_ad_auth_settings.png" /></p>
+<p><em>Before you configure Active Directory authentication, please ensure that you add the Active Directory server's IP to the DNS name servers list (described in the Networking section).</em></p>
+<ul>
+<li>
+<p>Select the “<strong>Services</strong>” main menu item on the left of the screen.</p>
+</li>
+<li>
+<p>Select the “<strong>Configure Windows access</strong>” sub menu tab.</p>
+</li>
+<li>
+<p>Make sure that the current authentication method is set to Active Directory. If not, click on the “<strong>Actions</strong>” drop down to change the authentication method. This will then take you to a screen that allows you to configure the settings for the Active Directory authentication server.</p>
+</li>
+</ul>
+<p>The required parameters for this are :</p>
+<p><strong>Authentication server DNS name</strong> : The DNS name of your Active Directory Server. Please note that you will need to configure UNICell's DNS server settings to add your Active Directory's DNS NAME and IP address otherwise authentication will fail.</p>
+<p><strong>Authentication server IP address</strong> : The IP address of the Active Directory server.</p>
+<p><strong>AD Domain/Realm</strong> : The Doman name of your Active Directory domain.</p>
+<p><strong>AD Admininstrator password</strong> : Enter the administrator password of your Active Directory server. This is required for the UNICell storage server to join the Active Directory domain in order to query and authenticate against it. This password is never stored in the UNICell server. It is only used for the initial join.</p>
+<p><strong>Workgroup</strong> : The workgroup of your Active Directory server</p>
+<p>Once this information is entered and saved, the UNICell server will then attempt to join the Active Directory domain of your Active Directory server. If this process is successful, then when you try to create a new Windows share, you should see the users and groups from Active Directory being displayed in that screen.</p>
+<h2 id="configuring-local-user-authentication-for-windows-shares">Configuring Local User authentication for Windows shares</h2>
+<p><img alt="Configuring local user authentication" src="../../img/modify_local_user_auth_settings.png" /></p>
+<p>If Active Directory authentication is not the preferred option, UNICell also supports authentication based on local users and groups created on the UNICell system itself. These local users and groups can be created using IntegralView (refer to the section about local users and groups in this manual).</p>
+<p>To configure local user based authentication :</p>
+<ul>
+<li>
+<p>Select the “<strong>Services</strong>” main menu item on the left of the screen.</p>
+</li>
+<li>
+<p>Select the “<strong>Configure Windows access</strong>” sub menu tab.</p>
+</li>
+<li>
+<p>Make sure that the current authentication method is set to Local Users. If not, click on the “<strong>Actions</strong>” drop down to change the authentication method. </p>
+</li>
+</ul>
+<p>On selecting this, you will be taken to a screen which prompts for the workgroup in use in your network. Enter the workgroup and save.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../configure_ftp/" class="btn btn-neutral float-right" title="Configuring FTP access">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../configure_ntp/" class="btn btn-neutral" title="Configuring the NTP service"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/integralstor/unicell_admin_docs" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../configure_ntp/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../configure_ftp/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

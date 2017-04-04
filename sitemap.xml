@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,35 @@
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/initial/network_access/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/integral_view/accessing/</loc>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://github.com/integralstor/integralstor_unicell/initial/accessing/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <loc>https://github.com/integralstor/integralstor_unicell/integral_view/changing_password/</loc>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://github.com/integralstor/integralstor_unicell/initial/getting_familiar/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <loc>https://github.com/integralstor/integralstor_unicell/integral_view/getting_familiar/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/integral_view/switching_modes/</loc>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,25 +51,25 @@
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/system_configuration/intro/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/system_configuration/scanning/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/system_configuration/download/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/system_configuration/email/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -63,13 +79,13 @@
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/zfs/intro/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/zfs/storage_layouts/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -84,32 +100,84 @@
     
         
     <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/users_groups/intro/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/users_groups/viewing_users_groups/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/users_groups/creating_user_group/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/users_groups/changing_user_password/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/users_groups/remove_user/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/users_groups/change_user_groups/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/users_groups/remove_group/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/users_groups/change_group_users/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
      <loc>https://github.com/integralstor/integralstor_unicell/logging/intro/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/logging/view_logs/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/logging/rotate_logs/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/logging/view_rotated_logs/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/logging/download_logs/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -119,79 +187,231 @@
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/intro/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/view_interfaces/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/view_interface/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/configure_address/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/change_interface_state/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/create_bond/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/remove_bond/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/configure_hostname/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/configure_dns/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/view_vlans/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/create_vlan/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/configure_vlan/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://github.com/integralstor/integralstor_unicell/networking/remove_vlan/</loc>
-     <lastmod>2017-02-02</lastmod>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/background_tasks/intro/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/background_tasks/view_tasks/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/background_tasks/view_task_details/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/background_tasks/remove_task/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/intro/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/view_snapshots/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/create_snapshot/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/snapshot_operations/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/view_snapshot_schedules/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/modify_snapshot_schedules/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/create_snapshot_schedule/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/view_remote_replications/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/schedule_remote_replication/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/modify_remote_replication/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/replication_snapshots/cancel_remote_replication/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/services/intro/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/services/controlling_services/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/services/configure_ntp/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/services/configure_cifs/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/services/configure_ftp/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/backup/intro/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://github.com/integralstor/integralstor_unicell/disks/view_disks/</loc>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

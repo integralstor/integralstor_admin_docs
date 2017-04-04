@@ -16,14 +16,24 @@
             "title": "Network access configuration"
         }, 
         {
-            "location": "/initial/accessing/", 
-            "text": "Once the steps in the previous section have been completed, you can then point your web browser to the configured IP addres(For example, if you had configured an IP address of 192.168.1.249, please type http://192.168.1.249 in a web browser of your choice like firefox or chromium).\n\n\nIf the networking configuration was done correctly and your computer and the UNICell storage system are on the same network then you should then see a screen similar to the one below.\n\n\n\n\nIf you do not see this screen then please check the network connectivity from your computer to the UNICell's configure IP address using a tool such as ping/telnet.\n\n\nYou will be prompted for a login name and password.\n\n\nThere are two levels of administrator logins with different privileges. For most common tasks, the admin username called \"admin\" should be used. The default password for this user is set to \u201cadmin\u201d.\n\n\nThere is another administrator login name called \"superadmin\" which gives provides all the functionality of the \"admin\" user plus the ability to remotely reboot the IntegralStor system.\n\n\n\n\nIt is advised that you change this password as soon as you login to IntegralView for security purposes.", 
+            "location": "/integral_view/accessing/", 
+            "text": "Once the steps in the previous section have been completed, you can then point your web browser to the configured IP addres(For example, if you had configured an IP address of 192.168.1.249, please type http://192.168.1.249 in a web browser of your choice like firefox or chromium).\n\n\nIf the networking configuration was done correctly and your computer and the UNICell storage system are on the same network then you should then see a screen similar to the one below.\n\n\n\n\nIf you do not see this screen then please check the network connectivity from your computer to the UNICell's configure IP address using a tool such as ping/telnet.\n\n\nYou will be prompted for a login name and password.\n\n\nThere are two levels of administrator logins with different privileges. For most common tasks, the admin username called \"admin\" should be used. The default password for this user is set to \u201cadmin\u201d.\n\n\nThere is another administrator login name called \"superadmin\" which gives provides all the functionality of the \"admin\" user plus the ability to remotely reboot the IntegralStor system. The default password for the \"admin\" and the \"superadmin\" users is the same as the username. \n\n\nIt is advised that you change this password as soon as you login to IntegralView for security purposes.(\ninstructions\n)", 
             "title": "Accessing IntegralView"
         }, 
         {
-            "location": "/initial/getting_familiar/", 
-            "text": "IntegralView has been designed to be very intuitive to use but a basic introduction to its layout may help in speeding up this understanding. There are four main areas in IntegralView as depicted in the screen below :\n\n\n\n\nThe help/alerts/logout section are visible and accessible from any screen in IntegralView. The \u201chelp\u201d link provides context sensitive help that is relevant to the particular screen in use with a brief explanation of its purpose and how to use it. The \u201calerts\u201d icon is normally \"!\" in colour and this icon changes coulour and flashes to inform you about any new system alerts. You can have a quick view of the new alerts by clicking on the icon. You can logout of IntegralView by clicking on the logout link on the top right hand corner of the screen.\n\n\nThe main category of actions available to you are grouped into the vertically alligned menu options on the left hand side of the screen.\n\n\nClicking on one of these main menu options brings up a set of horizintally alligned sub menu tabs. The options in these tabs correspond to the selected main menu option.\n\n\nClicking on a sub menu tab brings up the corresponding configuration screen on the main configuration area. This is where your actual configuration actions will be performed.", 
+            "location": "/integral_view/changing_password/", 
+            "text": "In order to change the IntegralView password:\n\n\n\n\n\n\n\n\nSelect the \u201c\nIntegralView settings\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nChange IntegralView password\n\u201d sub menu tab.\n\n\n\n\n\n\nYou will be prompted for the current password, the new password and a confirmation of the new password before you can change the current password.", 
+            "title": "Changing the IntegralView password"
+        }, 
+        {
+            "location": "/integral_view/getting_familiar/", 
+            "text": "IntegralView has been designed to be very intuitive to use but a basic introduction to its layout may help in speeding up this understanding. There are four main areas in IntegralView as depicted in the screen below :\n\n\n\n\n\n\n\n\nThe help/alerts/logout section are visible and accessible from any screen in IntegralView. The \u201chelp\u201d link provides context sensitive help that is relevant to the particular screen in use with a brief explanation of its purpose and how to use it. The \u201calerts\u201d icon is normally \"!\" in colour and this icon changes coulour and flashes to inform you about any new system alerts. You can have a quick view of the new alerts by clicking on the icon. You can logout of IntegralView by clicking on the logout link on the top right hand corner of the screen.\n\n\n\n\n\n\nThe main category of actions available to you are grouped into the vertically alligned menu options on the left hand side of the screen.\n\n\n\n\n\n\nClicking on one of these main menu options brings up a set of horizintally alligned sub menu tabs. The options in these tabs correspond to the selected main menu option.\n\n\n\n\n\n\nClicking on a sub menu tab brings up the corresponding configuration screen on the main configuration area. This is where your actual configuration actions will be performed.\n\n\n\n\n\n\nFor any screen that has global actions associated with it, you will see a drop down on the top right of the screen that says \"Actions\". Selecting this will drop down the actions specific to that screen.", 
             "title": "Getting familiar with IntegralView"
+        }, 
+        {
+            "location": "/integral_view/switching_modes/", 
+            "text": "IntegralView can be accessed using two modes - a non-secure HTTP access mode or a secure HTTP access mode.\n\n\n\n\n\n\n\n\nSelect the \u201c\nIntegralView settings\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nChange IntegralView access mode\n\u201d sub menu tab.\n\n\n\n\n\n\nIn order to use the secure HTTPS mode, you will either need to have created a self signed certificate or uploaded a certificate onto the UNICell system (Instructions : ). Once that is done, clicking on the \"Change to secure mode\" button will prompt you to select the certificate to use before changing the access mode. \n\n\n\n\n\n\n Please note that your current IntegralView access will be lost once you switch modes. You will need to use the https:// prefix for the secure mode or the http:// prefix for the non-secure mode to access IntegralView\"", 
+            "title": "Change IntegralView access mode (secure/non-secure)"
         }, 
         {
             "location": "/system_configuration/intro/", 
@@ -59,6 +69,46 @@
             "location": "/zfs/view_zfs_pools/", 
             "text": "Select the \u201c\nDisks and storage pools\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nZFS pools\n\u201d sub menu tab.\n\n\n\n\n\n\nThe main area will then display the list of all available pools along with the datasets/block device volumes in each of the pools.", 
             "title": "Viewing ZFS pools"
+        }, 
+        {
+            "location": "/users_groups/intro/", 
+            "text": "The UNICell system can be used in a standalone mode using local users and groups to provide authentication. You can create users and groups that are local to your UNICell storage system. These users and groups are used for local user authentication for CIFS shares and for certain other services.\n\n\nThis chapter explains all operations relating the local users and groups.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/users_groups/viewing_users_groups/", 
+            "text": "To view the existing local users and groups :\n\n\n\n\n\n\n\n\nSelect the \u201c\nUsers and groups\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nLocal users\n\u201d sub menu tab to view the existing local users.\n\n\n\n\n\n\nSelect the \u201c\nLocal groups\n\u201d sub menu tab to view the existing local groups.", 
+            "title": "Viewing users or groups"
+        }, 
+        {
+            "location": "/users_groups/creating_user_group/", 
+            "text": "To create a new local user or group :\n\n\n\n\n\n\n\n\nGo to the screen to view all local users or groups (\ninstructions\n)\n\n\n\n\n\n\nClick on the \u201c\nCreate user\n\u201d or \"\nCreate group\n\" button on the top right.\n\n\n\n\n\n\nFor creating a user, you will be prompted for the userid, user name and the password before the user is created (see below).\n\n\n\n\n\n\n\n\n\n\nFor creating a group, you will be taken to the screen below and prompted for the group name(see below).\n\n\n\n\n\n\n\n\nAfter you save, you will be taken to the screen which will allow you to change/set the group's membership (\ninstructions\n)", 
+            "title": "Creating a user or group"
+        }, 
+        {
+            "location": "/users_groups/changing_user_password/", 
+            "text": "To change the password of a local user :\n\n\n\n\n\n\n\n\nGo to the screen to view all local users (\ninstructions\n)\n\n\n\n\n\n\nClick on the \u201c\nActions\n\u201d selector corresponding to the desired user and select \"Change password\".\n\n\n\n\n\n\nYou will be taken to the screen shown below where you need to enter and confirm the new password in order to change the user's password.", 
+            "title": "Changing a user's password"
+        }, 
+        {
+            "location": "/users_groups/remove_user/", 
+            "text": "To delete a local user account:\n\n\n\n\n\n\n\n\nGo to the screen to view all local users (\ninstructions\n)\n\n\n\n\n\n\nClick on the \u201c\nActions\n\u201d selector corresponding to the desired user and select \"\nDelete this user\n\".\n\n\n\n\n\n\nYou will be taken to a confirmation screen before the user account is removed.", 
+            "title": "Remove a user account"
+        }, 
+        {
+            "location": "/users_groups/change_user_groups/", 
+            "text": "All local users belong to a system group called \"integralstor\". In addition, they can be assigned to other groups as well. To modify/set a local user's additional group membership :\n\n\n\n\n\n\n\n\nGo to the screen to view all local users (\ninstructions\n)\n\n\n\n\n\n\nClick on the \u201c\nActions\n\u201d selector corresponding to the desired user and select \"\nModify group membership\n\".\n\n\n\n\n\n\nYou will be taken to the screen below where you can select/remove the desired groups for membership.", 
+            "title": "Modifying a user's group membership"
+        }, 
+        {
+            "location": "/users_groups/remove_group/", 
+            "text": "To delete a local group account:\n\n\n\n\n\n\n\n\nGo to the screen to view all local groups (\ninstructions\n)\n\n\n\n\n\n\nClick on the \u201c\nActions\n\u201d selector corresponding to the desired group and select \"\nDelete this group\n\".\n\n\n\n\n\n\nYou will be taken to a confirmation screen before the group account is removed.", 
+            "title": "Remove a group account"
+        }, 
+        {
+            "location": "/users_groups/change_group_users/", 
+            "text": "To add/remove users from a particular group :\n\n\n\n\n\n\n\n\nGo to the screen to view all local groups (\ninstructions\n)\n\n\n\n\n\n\nClick on the \u201c\nActions\n\u201d selector corresponding to the desired group and select \"\nModify group membership\n\".\n\n\n\n\n\n\nYou will be taken to the screen below where you can select/remove the desired users for membership in the selected group.", 
+            "title": "Modifying a group's membership"
         }, 
         {
             "location": "/logging/intro/", 
@@ -149,6 +199,171 @@
             "location": "/networking/remove_vlan/", 
             "text": "Go the the screen that displays the desired interface details (\ninstructions\n)\n\n\nClick on the \"\nActions\n\" dropdown next to the desired VLAN.\n\n\nSelect the \"\nRemove this VLAN\n\" option \n\n\nYou will be prompted for a confirmation before this VLAN is removed.", 
             "title": "Removing a VLAN"
+        }, 
+        {
+            "location": "/background_tasks/intro/", 
+            "text": "The UNICell system uses background tasks to execute potentially long running actions or to execute actions that involve multiple steps.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/background_tasks/view_tasks/", 
+            "text": "To view the list of currently present (either scheduled, running, failed or completed) background tasks :\n\n\n\n\n\n\n\n\nSelect the \u201c\nBackground tasks\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nBackground tasks\n\u201d sub menu tab.\n\n\n\n\n\n\nThe list of background tasks present will be listed.", 
+            "title": "Viewing all background tasks"
+        }, 
+        {
+            "location": "/background_tasks/view_task_details/", 
+            "text": "To view the details of a particular task: \n\n\n\n\n\n\n\n\nSelect the \u201c\nBackground tasks\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nBackground tasks\n\u201d sub menu tab.\n\n\n\n\n\n\nThe list of background tasks present will be listed.\n\n\n\n\n\n\nClick on the name of the desired task to view the details.", 
+            "title": "Viewing background task details"
+        }, 
+        {
+            "location": "/background_tasks/remove_task/", 
+            "text": "To remove a particular task: \n\n\n\n\n\n\n\n\nGo the the screen that displays the details of the desired task(\ninstructions\n)\n\n\n\n\n\n\nClick on the actions drop down and select the \"\nRemove this task\n\" option. You will be prompted with a confirmation screen before the task is removed.", 
+            "title": "Removing a task"
+        }, 
+        {
+            "location": "/replication_snapshots/intro/", 
+            "text": "The UNICell system allows you to manualy create ZFS snapshots or schedule snapshot creation. \n\n\nSnapshots\n\n\nA description of ZFS snapshots from \nAaron Topence's ZFS guide\n follows..\n\n\n\"A snapshot is a first class read-only filesystem. It is a mirrored copy of the state of the filesystem at the time you took the snapshot. Think of it like a digital photograph of the outside world. Even though the world is changing, you have an image of what the world was like at the exact moment you took that photograph. Snapshots behave in a similar manner, except when data changes that was part of the dataset, you keep the original copy in the snapshot itself. This way, you can maintain persistence of that filesystem.\n\n\nYou can keep up to 2^64 snapshots in your pool. ZFS snapshots are persistent across reboots, and they don't require any additional backing store; they use the same storage pool as the rest of your data. Creating snapshots is near instantaneous, and they are cheap. However, once the data begins to change, the snapshot will begin storing data. If you have multiple snapshots, then multiple deltas will be tracked across all the snapshots. However, depending on your needs, snapshots can still be exceptionally cheap.\"\n\n\nReplication\n\n\nThe UNICell system uses ZFS's send and receive functionalities to send consistent file system images of a dataset to another UNICell system. A description of ZFS send from \nAaron Topence's ZFS guide\n follows..\n\n\n\"Now that you're a pro at snapshots, we can move to one of the crown jewels of ZFS- the ability to send and receive full filesystems from one host to another. This is epic, and I am not aware of any other filesystem that can do this without the help of 3rd party tools, such as \"dd\" and \"nc\".\n\n\nSending a ZFS filesystem means taking a snapshot of a dataset, and sending the snapshot. This ensures that while sending the data, it will always remain consistent, which is crux for all things ZFS. By default, we send the data to a file. We then can move that single file to an offsite backup, another storage server, or whatever. The advantage a ZFS send has over \"dd\", is the fact that you do not need to take the filesystem offilne to get at the data.\"", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/replication_snapshots/intro/#snapshots", 
+            "text": "A description of ZFS snapshots from  Aaron Topence's ZFS guide  follows..  \"A snapshot is a first class read-only filesystem. It is a mirrored copy of the state of the filesystem at the time you took the snapshot. Think of it like a digital photograph of the outside world. Even though the world is changing, you have an image of what the world was like at the exact moment you took that photograph. Snapshots behave in a similar manner, except when data changes that was part of the dataset, you keep the original copy in the snapshot itself. This way, you can maintain persistence of that filesystem.  You can keep up to 2^64 snapshots in your pool. ZFS snapshots are persistent across reboots, and they don't require any additional backing store; they use the same storage pool as the rest of your data. Creating snapshots is near instantaneous, and they are cheap. However, once the data begins to change, the snapshot will begin storing data. If you have multiple snapshots, then multiple deltas will be tracked across all the snapshots. However, depending on your needs, snapshots can still be exceptionally cheap.\"", 
+            "title": "Snapshots"
+        }, 
+        {
+            "location": "/replication_snapshots/intro/#replication", 
+            "text": "The UNICell system uses ZFS's send and receive functionalities to send consistent file system images of a dataset to another UNICell system. A description of ZFS send from  Aaron Topence's ZFS guide  follows..  \"Now that you're a pro at snapshots, we can move to one of the crown jewels of ZFS- the ability to send and receive full filesystems from one host to another. This is epic, and I am not aware of any other filesystem that can do this without the help of 3rd party tools, such as \"dd\" and \"nc\".  Sending a ZFS filesystem means taking a snapshot of a dataset, and sending the snapshot. This ensures that while sending the data, it will always remain consistent, which is crux for all things ZFS. By default, we send the data to a file. We then can move that single file to an offsite backup, another storage server, or whatever. The advantage a ZFS send has over \"dd\", is the fact that you do not need to take the filesystem offilne to get at the data.\"", 
+            "title": "Replication"
+        }, 
+        {
+            "location": "/replication_snapshots/view_snapshots/", 
+            "text": "To view the list of created snapshots:\n\n\n\n\n\n\n\n\nSelect the \u201c\nReplication and snapshots\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nView snapshots\n\u201d sub menu tab.\n\n\n\n\n\n\nThe list of snapshot created will be listed.\n\n\n\n\n\n\nYou can filter these snapshots by the target by selecting the target from the dropdown menu.", 
+            "title": "Viewing snapshots"
+        }, 
+        {
+            "location": "/replication_snapshots/create_snapshot/", 
+            "text": "To manually create a new snapshot:\n\n\n\n\n\n\n\n\nGo the the screen that displays the list of snapshots (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nCreate snapshot\n\" button.\n\n\n\n\n\n\nYou will be presented with the screen below where you will need to select the target for which the snapshot is desired and a name for the desired snapshot before the snapshot is created.", 
+            "title": "Creating a snapshot"
+        }, 
+        {
+            "location": "/replication_snapshots/snapshot_operations/", 
+            "text": "The UNICell system allows you to rename, delete or roll back to a particular snapshot.\n\n\nBefore deleting/rolling back to a snapshot, you will be prompted for a confirmation as these operation involve the potential loss of data.\n\n\nA note from the ZFS documentation about rolling back to a snapshot :\nA note about these ZFS snapshots from \nAaron Topence's ZFS guide\n follows..\n\n\n*\"An important thing to know, is if a snapshot exists, it's considered a child filesystem to the dataset. As such, you cannot remove a dataset until all snapshots, and nested datasets have been destroyed.\"\n\n\n\u201cRolling back to a previous snapshot will discard any data changes between that snapshot and the current time. Further, by default, you can only rollback to the most recent snapshot. In order to rollback to an earlier snapshot, you must destroy all snapshots between the current time and that snapshot you wish to rollback to. If that's not enough, the filesystem must be unmounted before the rollback can begin. This means downtime.\u201d\n\n\n\n\n\n\n\n\nGo the the screen that displays the list of snapshots (\ninstructions\n)\n\n\n\n\n\n\nFor the desired snapshot, click on the \"\nActions\n\" button and select the desired snapshot operation.", 
+            "title": "Snapshot operations"
+        }, 
+        {
+            "location": "/replication_snapshots/view_snapshot_schedules/", 
+            "text": "Creation of snapshots can be scheduled in the UNICell system. Scheduled snapshots are also automatically pruned in order to avoid unnecessary old snapshots from accumalating. The snapshots can be scheduled for the following frequencies :\n\n\n\n\nEvery 15 minutes (only the last 4 of these snapshots will be preserved)\n\n\nHourly (only the last 24 of these snapshots will be preserved)\n\n\nDaily (only the last 365 of these snapshots will be preserved)\n\n\nWeekly (only the last 52 of these snapshots will be preserved)\n\n\nMonthly (only the last 12 of these snapshots will be preserved)\n\n\n\n\nTo view the current snapshot creation schedules:\n\n\n\n\n\n\n\n\nSelect the \u201c\nReplication and snapshots\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nView snapshot schedules\n\u201d sub menu tab.\n\n\n\n\n\n\nThe list of snapshot schedules will be listed.", 
+            "title": "View snapshots schedules"
+        }, 
+        {
+            "location": "/replication_snapshots/modify_snapshot_schedules/", 
+            "text": "To modify or cancel an already created snapshot schedule :\n\n\n\n\n\n\n\n\nGo the the screen that displays the list of snapshot schedules (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nActions\n\" dropdown corresponding to the desired snapshot schedule.\n\n\n\n\n\n\nYou will be taken to the screen below where you can check/un-check any of the schedules.", 
+            "title": "Modify snapshots schedules"
+        }, 
+        {
+            "location": "/replication_snapshots/create_snapshot_schedule/", 
+            "text": "To create a new snapshot schedule:\n\n\n\n\n\n\n\n\nGo the the screen that displays the snapshot schedules (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nActions\n\" dropdown and select \"\nCreate a new snapshot schedule\n\".\n\n\n\n\n\n\nYou will be taken to the screen below where you can select the schedule.", 
+            "title": "Create a new snapshots schedule"
+        }, 
+        {
+            "location": "/replication_snapshots/view_remote_replications/", 
+            "text": "Remote replication of a dataset from one UNICell to a ZFS pool in another UNICell can be scheduled. To view the currently scheduled remote replications:\n\n\n\n\n\n\n\n\nSelect the \u201c\nReplication and snapshots\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nRemote replication\n\u201d sub menu tab.\n\n\n\n\n\n\nThe list of scheduled remote replications will be listed.", 
+            "title": "Viewing remote replications"
+        }, 
+        {
+            "location": "/replication_snapshots/schedule_remote_replication/", 
+            "text": "To schedule a new remote replication:\n\n\n\n\n\n\n\n\nGo the the screen that displays the list of remote replications (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nSchedule new replication\n\" button.\n\n\n\n\n\n\nThis will take you to the screen below. You will need to choose the source dataset, the IP address of the destination UNICell, the pool name on the remote UNICell which will receive this replicated dataset and the schedule.", 
+            "title": "Scheduling a remote replications"
+        }, 
+        {
+            "location": "/replication_snapshots/modify_remote_replication/", 
+            "text": "To modify the schedule of an already scheduled remote replication:\n\n\n\n\n\n\n\n\nGo the the screen that displays the list of remote replications (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nActions\n\" dropdown corresponding to the desired remote replication and select \"\nModify replication settings\n\".\n\n\n\n\n\n\nThis will take you to the screen below where you can change the schedule of the replication.", 
+            "title": "Modifying the schedule for a remote replications"
+        }, 
+        {
+            "location": "/replication_snapshots/cancel_remote_replication/", 
+            "text": "To cancel the schedule of an already scheduled remote replication:\n\n\n\n\n\n\n\n\nGo the the screen that displays the list of remote replications (\ninstructions\n)\n\n\n\n\n\n\nClick on the \"\nActions\n\" dropdown corresponding to the desired remote replication and select \"\nCancel this replication\n\".\n\n\n\n\n\n\nThis will take you to a confirmation screen before the replication is cancelled.", 
+            "title": "Cancelling the schedule for a remote replications"
+        }, 
+        {
+            "location": "/services/intro/", 
+            "text": "The UNICell server provides various services that can be configured. In addition to these, it also runs other services which can be started, stopped or restarted. This section describes all these operations.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/services/controlling_services/", 
+            "text": "The status of various system services can be viewed and controlled using this option. Please use this very carefully as stopping a system service may result in an outage in data access to users.\n\n\n\n- Select the \u201c\nServices\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nView services\n\u201d sub menu tab.\n\n\n\n\n\n\nThis will display a list of system services with its current status. Use either the \u201c\nStart\n\u201d, \u201c\nStop\n\u201d or \"\nRestart\n\" in the Actions column to change the status of a particular service.", 
+            "title": "Controlling services"
+        }, 
+        {
+            "location": "/services/configure_ntp/", 
+            "text": "The NTP service is used to synchronize the time on the UNICell system to another server. This is particularly important in the case of Active Directory authentication as a time lag between the active directory server and the UNiCell server may result in a failure in authentication.\n\n\nTo view the current NTP configuration:\n\n\n\n\n\n\n\n\nSelect the \u201c\nServices\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nConfigure NTP\n\u201d sub menu tab.\n\n\n\n\n\n\nIf you have already configured the NTP service, the current configuration will be displayed. \n\n\n\n\n\n\nTo modify the current NTP configuration:\n\n\n\n\n\n\nClick on the \u201c\nModify\n\u201d button to change the settings. You will see a screen similar to the one below\n\n\n\n\n\n\nIf you have not configured the NTP service before then click on the \u201c\nConfigure NTP settings\n\u201d button.\n\n\n\n\n\n\nIn either case, you will be prompted for the following information :\n\n\nNTP server list\n : Enter comma separated list of NTP server IP addresses or hostnames. If you enter hostnames, then please configure a DNS name server on UNICell which can resolve this hostname.", 
+            "title": "Configuring the NTP service"
+        }, 
+        {
+            "location": "/services/configure_cifs/", 
+            "text": "Introduction\n\n\nBefore you can create and use Windows shares, you should first configure the Windows access service.\n\n\nUNICell currently supports two methods of authentication for Windows shares \u2013 Active Directory and local user/groups. Before you can create shares, please select one of these methods of authentication.\n\n\nViewing the current configuration\n\n\nTo view the current authentication method :\n\n\n\n\n\n\n\n\nSelect the \u201c\nServices\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nConfigure Windows access\n\u201d sub menu tab.\n\n\n\n\n\n\nThis screen will display the current authentication method and other details.\n\n\nModifying the authentication method\n\n\nTo change the authentication method :\n\n\n\n\n\n\n\n\nClick on the \"\nActions\n\" dropdown and select \u201c\nChange authentication method\n\u201d \n\n\n\n\n\n\nThis will allow you to change the authentication method. Once you select the authentication method, you will be taken to a screen that allows you to select the required parameters for that particular mode of authentication. \nPlease note that changing the authentication method will result in the current access control being lost for all currently existing shares.\n\n\n\n\n\n\nModifying authentication settings\n\n\n\n\nTo change the authentication settings but retain the current authentication method :\n\n\n\n\nClick on the \"\nActions\n\" dropdown and select \u201c\nChange authentication settings\n\u201d \n\n\n\n\nYou will be taken to a screen that allows you to select the required parameters for that particular mode of authentication. \n\n\nConfiguring Active Directory (AD) authentication for Windows shares\n\n\n\n\nBefore you configure Active Directory authentication, please ensure that you add the Active Directory server's IP to the DNS name servers list (described in the Networking section).\n\n\n\n\n\n\nSelect the \u201c\nServices\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nConfigure Windows access\n\u201d sub menu tab.\n\n\n\n\n\n\nMake sure that the current authentication method is set to Active Directory. If not, click on the \u201c\nActions\n\u201d drop down to change the authentication method. This will then take you to a screen that allows you to configure the settings for the Active Directory authentication server.\n\n\n\n\n\n\nThe required parameters for this are :\n\n\nAuthentication server DNS name\n : The DNS name of your Active Directory Server. Please note that you will need to configure UNICell's DNS server settings to add your Active Directory's DNS NAME and IP address otherwise authentication will fail.\n\n\nAuthentication server IP address\n : The IP address of the Active Directory server.\n\n\nAD Domain/Realm\n : The Doman name of your Active Directory domain.\n\n\nAD Admininstrator password\n : Enter the administrator password of your Active Directory server. This is required for the UNICell storage server to join the Active Directory domain in order to query and authenticate against it. This password is never stored in the UNICell server. It is only used for the initial join.\n\n\nWorkgroup\n : The workgroup of your Active Directory server\n\n\nOnce this information is entered and saved, the UNICell server will then attempt to join the Active Directory domain of your Active Directory server. If this process is successful, then when you try to create a new Windows share, you should see the users and groups from Active Directory being displayed in that screen.\n\n\nConfiguring Local User authentication for Windows shares\n\n\n\n\nIf Active Directory authentication is not the preferred option, UNICell also supports authentication based on local users and groups created on the UNICell system itself. These local users and groups can be created using IntegralView (refer to the section about local users and groups in this manual).\n\n\nTo configure local user based authentication :\n\n\n\n\n\n\nSelect the \u201c\nServices\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nConfigure Windows access\n\u201d sub menu tab.\n\n\n\n\n\n\nMake sure that the current authentication method is set to Local Users. If not, click on the \u201c\nActions\n\u201d drop down to change the authentication method. \n\n\n\n\n\n\nOn selecting this, you will be taken to a screen which prompts for the workgroup in use in your network. Enter the workgroup and save.", 
+            "title": "Configuring Windows access"
+        }, 
+        {
+            "location": "/services/configure_cifs/#introduction", 
+            "text": "Before you can create and use Windows shares, you should first configure the Windows access service.  UNICell currently supports two methods of authentication for Windows shares \u2013 Active Directory and local user/groups. Before you can create shares, please select one of these methods of authentication.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/services/configure_cifs/#viewing-the-current-configuration", 
+            "text": "To view the current authentication method :     Select the \u201c Services \u201d main menu item on the left of the screen.    Select the \u201c Configure Windows access \u201d sub menu tab.    This screen will display the current authentication method and other details.", 
+            "title": "Viewing the current configuration"
+        }, 
+        {
+            "location": "/services/configure_cifs/#modifying-the-authentication-method", 
+            "text": "To change the authentication method :     Click on the \" Actions \" dropdown and select \u201c Change authentication method \u201d     This will allow you to change the authentication method. Once you select the authentication method, you will be taken to a screen that allows you to select the required parameters for that particular mode of authentication.  Please note that changing the authentication method will result in the current access control being lost for all currently existing shares.", 
+            "title": "Modifying the authentication method"
+        }, 
+        {
+            "location": "/services/configure_cifs/#modifying-authentication-settings", 
+            "text": "To change the authentication settings but retain the current authentication method :   Click on the \" Actions \" dropdown and select \u201c Change authentication settings \u201d    You will be taken to a screen that allows you to select the required parameters for that particular mode of authentication.", 
+            "title": "Modifying authentication settings"
+        }, 
+        {
+            "location": "/services/configure_cifs/#configuring-active-directory-ad-authentication-for-windows-shares", 
+            "text": "Before you configure Active Directory authentication, please ensure that you add the Active Directory server's IP to the DNS name servers list (described in the Networking section).    Select the \u201c Services \u201d main menu item on the left of the screen.    Select the \u201c Configure Windows access \u201d sub menu tab.    Make sure that the current authentication method is set to Active Directory. If not, click on the \u201c Actions \u201d drop down to change the authentication method. This will then take you to a screen that allows you to configure the settings for the Active Directory authentication server.    The required parameters for this are :  Authentication server DNS name  : The DNS name of your Active Directory Server. Please note that you will need to configure UNICell's DNS server settings to add your Active Directory's DNS NAME and IP address otherwise authentication will fail.  Authentication server IP address  : The IP address of the Active Directory server.  AD Domain/Realm  : The Doman name of your Active Directory domain.  AD Admininstrator password  : Enter the administrator password of your Active Directory server. This is required for the UNICell storage server to join the Active Directory domain in order to query and authenticate against it. This password is never stored in the UNICell server. It is only used for the initial join.  Workgroup  : The workgroup of your Active Directory server  Once this information is entered and saved, the UNICell server will then attempt to join the Active Directory domain of your Active Directory server. If this process is successful, then when you try to create a new Windows share, you should see the users and groups from Active Directory being displayed in that screen.", 
+            "title": "Configuring Active Directory (AD) authentication for Windows shares"
+        }, 
+        {
+            "location": "/services/configure_cifs/#configuring-local-user-authentication-for-windows-shares", 
+            "text": "If Active Directory authentication is not the preferred option, UNICell also supports authentication based on local users and groups created on the UNICell system itself. These local users and groups can be created using IntegralView (refer to the section about local users and groups in this manual).  To configure local user based authentication :    Select the \u201c Services \u201d main menu item on the left of the screen.    Select the \u201c Configure Windows access \u201d sub menu tab.    Make sure that the current authentication method is set to Local Users. If not, click on the \u201c Actions \u201d drop down to change the authentication method.     On selecting this, you will be taken to a screen which prompts for the workgroup in use in your network. Enter the workgroup and save.", 
+            "title": "Configuring Local User authentication for Windows shares"
+        }, 
+        {
+            "location": "/services/configure_ftp/", 
+            "text": "The UNICell server can also serve as an FTP server. UNICell uses vsftpd. Vsftpd is an open source FTP server. It is an extremely secure, stable and fast FTP server used by many high traffic sites on the Internet.\n\n\nViewing the current FTP configuration\n\n\nTo view the current FTP method :\n\n\n\n\n\n\n\n\nSelect the \u201c\nServices\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nConfigure FTP access\n\u201d sub menu tab.\n\n\n\n\n\n\nThis screen will display the current configuration.\n\n\nModifying the FTP configuration\n\n\nTo modify the current FTP method :\n\n\n\n\nPlease note that you need to have created at least one dataset that can be used as the FTP destination/source before configuring FTP.\n\n\n\n\n\n\nSelect the \u201c\nServices\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nConfigure FTP access\n\u201d sub menu tab.\n\n\n\n\n\n\nClick on the \"\nActions\n\" dropdown and select the \"\nModify configuration\n\" option.\n\n\n\n\n\n\nYou will be taken to the screen below where you need to enter the dataset in which FTP data will reside. You can also configure FTP to use secure SSL(TLS) connections. If you choose this option, you will need to select the SSL certificate to use.\n\n\n\n\n\n\n\n\nConfiguring user FTP access\n\n\nAny local user account that has been created on the UNICell system can access the FTP server but before that, user directories have to be created within the dataset that has been earmarked for FTP data.\n\n\nIn order to create user directories for all existing local users on the UNICell system :\n\n\n\n\nPlease note that you every time you add a new local user, you will need to perform this step in order to provide that user with FTP access\n\n\n\n\n\n\nSelect the \u201c\nServices\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nConfigure FTP access\n\u201d sub menu tab.\n\n\n\n\n\n\nClick on the \"\nActions\n\" dropdown and select the \"\nCreate FTP user directories\n\" option. This will result in subdirectories getting created under the designated FTP dataset with appropriate permissions.", 
+            "title": "Configuring FTP access"
+        }, 
+        {
+            "location": "/services/configure_ftp/#viewing-the-current-ftp-configuration", 
+            "text": "To view the current FTP method :     Select the \u201c Services \u201d main menu item on the left of the screen.    Select the \u201c Configure FTP access \u201d sub menu tab.    This screen will display the current configuration.", 
+            "title": "Viewing the current FTP configuration"
+        }, 
+        {
+            "location": "/services/configure_ftp/#modifying-the-ftp-configuration", 
+            "text": "To modify the current FTP method :   Please note that you need to have created at least one dataset that can be used as the FTP destination/source before configuring FTP.    Select the \u201c Services \u201d main menu item on the left of the screen.    Select the \u201c Configure FTP access \u201d sub menu tab.    Click on the \" Actions \" dropdown and select the \" Modify configuration \" option.    You will be taken to the screen below where you need to enter the dataset in which FTP data will reside. You can also configure FTP to use secure SSL(TLS) connections. If you choose this option, you will need to select the SSL certificate to use.", 
+            "title": "Modifying the FTP configuration"
+        }, 
+        {
+            "location": "/services/configure_ftp/#configuring-user-ftp-access", 
+            "text": "Any local user account that has been created on the UNICell system can access the FTP server but before that, user directories have to be created within the dataset that has been earmarked for FTP data.  In order to create user directories for all existing local users on the UNICell system :   Please note that you every time you add a new local user, you will need to perform this step in order to provide that user with FTP access    Select the \u201c Services \u201d main menu item on the left of the screen.    Select the \u201c Configure FTP access \u201d sub menu tab.    Click on the \" Actions \" dropdown and select the \" Create FTP user directories \" option. This will result in subdirectories getting created under the designated FTP dataset with appropriate permissions.", 
+            "title": "Configuring user FTP access"
+        }, 
+        {
+            "location": "/backup/intro/", 
+            "text": "File and image backups from various client machines can be backed up onto the UNICell server. UNICell uses \nUrBackup\n to administer this functionality. \n\n\nHere is a description of UrBackup from their website :\n\n\n\"UrBackup is an easy to setup Open Source client/server backup system, that through a combination of image and file backups accomplishes both data safety and a fast restoration time.\n\n\nFile and image backups are made while the system is running without interrupting current processes.\n\n\nUrBackup also continuously watches folders you want backed up in order to quickly find differences to previous backups. Because of that, incremental file backups are really fast.\n\n\nYour files can be restored through the web interface, via the client or the Windows Explorer while the backups of drive volumes can be restored with a bootable CD or USB-Stick (bare metal restore).\n\n\nA web interface makes setting up your own backup server really easy. For a quick impression please look at the screenshots here.\n\n\nCurrently there are over 10,000 running UrBackup server instances (with auto-update enabled) with some instances having hundreds of active clients.\"\n\n\nUNICell has integrated the UrBackup admin interface into IntegralView. To access this interface:\n\n\n\n\n\n\n\n\nSelect the \u201c\nData backup\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nThe UrBackup interface will then be loaded.\n\n\n\n\n\n\nDetailed documentation on the usage of UrBackup is available on the \nUrBackup documentation page\n.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/disks/view_disks/", 
+            "text": "The UNICell system had a comprehensive disk information reporting, monitoring and replacement system. \n\n\nTo view the list of disks that the system has recognized:\n\n\n\n\n\n\n\n\nSelect the \u201c\nDisks and storage pools\n\u201d main menu item on the left of the screen.\n\n\n\n\n\n\nSelect the \u201c\nDisks\n\u201d sub menu tab.\n\n\n\n\n\n\nInformation about all the disks will be displayed.\n\n\n\n\n\n\nThis list is usually divided into three sections:\n\n\nData disks(rotating) - This section lists all rotating data (non-OS) disks\n\nData disks(Flash) - This section lists all non rotating data (non-OS) disks\n*OS disks - The list of disks which conain the OS.", 
+            "title": "Viewing disks"
         }
     ]
 }
