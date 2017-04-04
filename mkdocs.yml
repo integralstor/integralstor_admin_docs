@@ -7,8 +7,11 @@ pages:
   - Home: index.md
   - Getting started:
     - Network access configuration: initial/network_access.md
-    - Accessing IntegralView: initial/accessing.md
-    - Getting familiar with IntegralView: initial/getting_familiar.md
+  - IntegralView:
+    - Accessing IntegralView: integral_view/accessing.md
+    - Changing the IntegralView password: integral_view/changing_password.md
+    - Getting familiar with IntegralView: integral_view/getting_familiar.md
+    - Change IntegralView access mode (secure/non-secure): integral_view/switching_modes.md
   - System information:
     - Viewing system information: system_configuration/intro.md
     - Scanning for hardware changes: system_configuration/scanning.md
@@ -19,6 +22,15 @@ pages:
     - Supported storage layouts: zfs/storage_layouts.md
     - ZFS Pool operations:
       - Viewing ZFS pools: zfs/view_zfs_pools.md
+  - Local users and groups:
+    - Introduction : users_groups/intro.md
+    - Viewing users or groups : users_groups/viewing_users_groups.md
+    - Creating a user or group : users_groups/creating_user_group.md
+    - Changing a user's password : users_groups/changing_user_password.md
+    - Remove a user account : users_groups/remove_user.md
+    - Modifying a user's group membership : users_groups/change_user_groups.md
+    - Remove a group account : users_groups/remove_group.md
+    - Modifying a group's membership : users_groups/change_group_users.md
   - Logging and alerting:
     - Introduction: logging/intro.md
     - Viewing logs: logging/view_logs.md
@@ -39,5 +51,33 @@ pages:
     - Creating a VLAN for an interface: networking/create_vlan.md
     - Configuring a VLAN address: networking/configure_vlan.md
     - Removing a VLAN : networking/remove_vlan.md
+  - Background tasks:
+    - Introduction: background_tasks/intro.md
+    - Viewing all background tasks: background_tasks/view_tasks.md
+    - Viewing background task details: background_tasks/view_task_details.md
+    - Removing a task : background_tasks/remove_task.md
+  - Replication and snapshots:
+    - Introduction: replication_snapshots/intro.md
+    - Viewing snapshots: replication_snapshots/view_snapshots.md
+    - Creating a snapshot: replication_snapshots/create_snapshot.md
+    - Snapshot operations: replication_snapshots/snapshot_operations.md
+    - View snapshots schedules: replication_snapshots/view_snapshot_schedules.md
+    - Modify snapshots schedules: replication_snapshots/modify_snapshot_schedules.md
+    - Create a new snapshots schedule: replication_snapshots/create_snapshot_schedule.md
+    - Viewing remote replications: replication_snapshots/view_remote_replications.md
+    - Scheduling a remote replications: replication_snapshots/schedule_remote_replication.md
+    - Modifying the schedule for a remote replications: replication_snapshots/modify_remote_replication.md
+    - Cancelling the schedule for a remote replications: replication_snapshots/cancel_remote_replication.md
+  - Services management:
+    - Introduction: services/intro.md
+    - Controlling services: services/controlling_services.md
+    - Configuring the NTP service: services/configure_ntp.md
+    - Configuring Windows access: services/configure_cifs.md
+    - Configuring FTP access: services/configure_ftp.md
+  - Data backup:
+    - Introduction: backup/intro.md
+  - Disk management:
+    - Viewing disks: disks/view_disks.md
+
 
 theme: readthedocs

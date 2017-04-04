@@ -11,8 +11,6 @@ You will be prompted for a login name and password.
 
 There are two levels of administrator logins with different privileges. For most common tasks, the admin username called "admin" should be used. The default password for this user is set to “admin”.
 
-There is another administrator login name called "superadmin" which gives provides all the functionality of the "admin" user plus the ability to remotely reboot the IntegralStor system.
+There is another administrator login name called "superadmin" which gives provides all the functionality of the "admin" user plus the ability to remotely reboot the IntegralStor system. The default password for the "admin" and the "superadmin" users is the same as the username. 
 
-![Change password screen](../img/change_password.png)
-
-**It is advised that you change this password as soon as you login to IntegralView for security purposes.**
+**It is advised that you change this password as soon as you login to IntegralView for security purposes.([instructions](changing_password.md))**
